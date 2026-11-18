@@ -1,0 +1,31 @@
+{
+    "name": "sekolah/presensi",
+    "description": "Sistem Presensi Sekolah - PHP Native",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo": "*",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "ext-fileinfo": "*",
+        "ext-openssl": "*",
+        "ext-curl": "*",
+        "vlucas/phpdotenv": "^5.6",
+        "dompdf/dompdf": "^3.0",
+        "endroid/qr-code": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/helpers/url.php",
+            "app/helpers/format.php",
+            "app/helpers/school.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
